@@ -1,0 +1,387 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff8f0;
+}
+
+header {
+  background-color: #05204a;
+  color: #fff8f0;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff8f0;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("https://cdn.leonardo.ai/users/63c74b00-3f08-4ee0-9c98-891c3011bbdc/generations/41bbec22-988d-4b61-b217-86ec6c53de13/Vintage_Style_Photography_black_taxi_on_the_road_cartoon_style_0.jpg");
+  color: #05204a;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1,
+p {
+  background-color: #fff8f0;
+  color: #05204a;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.cta-button {
+  background-color: #fff8f0;
+  color: #05204a;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #05204a;
+  color: #fff8f0;
+}
+
+.testimonials {
+  background-color: #05204a;
+  color: #fff8f0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff8f0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.partners {
+  background-color: #fff8f0;
+  color: #05204a;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.partner-logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.partner-logo img {
+  height: 150px;
+}
+#spec {
+  display: flex;
+  gap: 10px;
+}
+.cta {
+  background-color: #05204a;
+  color: #fff8f0;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer {
+  background-color: #05204a;
+  color: #fff8f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact,
+.policy,
+.social-media {
+  flex: 1 1 300px;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.contact h3,
+.policy p,
+.social-media h3 {
+  color: #fff8f0;
+  margin-bottom: 10px;
+}
+
+.contact p,
+.policy p {
+  margin-bottom: 15px;
+}
+
+.social-media a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #fff8f0;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+.ride-posting {
+  background-color: #fff8f0;
+  color: #05204a;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.imgForRideForm {
+  display: flex;
+}
+
+#imageforRide {
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+}
+
+.ride-form {
+  max-width: 600px;
+  margin-left: 30px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#rideWithUs {
+  font-size: 3rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #05204a;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #05204a;
+  color: #fff8f0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff8f0;
+  color: #05204a;
+  border: 1px solid #05204a;
+}
+
+.matched-drivers {
+  margin-top: 30px;
+}
+
+#matchedDriversList {
+  list-style: none;
+  padding: 0;
+}
+
+#matchedDriversList li {
+  background-color: #9dacff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.location-input {
+  position: relative;
+}
+
+.gps-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff8f0;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #57667e;
+}
+
+.cta-button,
+.cta-button:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.about {
+  background-color: #05204a;
+  color: #fff8f0;
+  padding: 50px 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+.about p {
+  background-color: #05204a;
+  color: #fff8f0;
+  margin: 10px 160px;
+}
+.ride-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.ride-form legend {
+  font-weight: bold;
+}
+
+.ride-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ride-form .seat-capacity,
+.ride-form .smoking-preference,
+.ride-form .gender-preference {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.sustainability-metrics {
+  background-color: #fff8f0;
+  color: #05204a;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.loading-overlay {
+  display: none;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(67, 43, 205, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #05204a;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cta-button {
+  background-color: #fff8f0;
+  color: #05204a;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-h1 {
+  background-color: #f6cfa2;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-p {
+  background-color: #fff8f0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #05204a;
+  color: #fff8f0;
+}
+
+.sustainability-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 250px;
+}
+
