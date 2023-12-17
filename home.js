@@ -1,5 +1,3 @@
-// Add this JavaScript code to your existing script file or a new one
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
