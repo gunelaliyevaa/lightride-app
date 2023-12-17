@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Your Ride App</title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="logo">Light Ride</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="reg.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p>Your Ride, Your Way</p><br/>
+        <p>Experience safe and convenient rides with us.</p>
+    </div>
+    <a href="#ride-posting" class="cta-button">Get Started</a>
+    </div>
+</section>
+
+<section id="ride-posting" class="ride-posting">
+    <div class="ride-form">
+        <h1 id="rideWithUs">Choose Ride with Us</h1>
+        <form id="rideForm">
+            <label for="pickupLocation">Pick-up Location:</label>
+            <div class="location-input">
+                <input type="text" id="pickupLocation" name="pickupLocation" required>
+                <span id="gpsIcon" class="gps-icon" onclick="getLocation()">📍</span>
+            </div>
+
+            <label for="dropOffLocation">Drop-off Location:</label>
+            <input type="text" id="dropOffLocation" name="dropOffLocation" required>
+
+
+            <fieldset>
+                <legend>Preferences:</legend>
+
+                <!-- Seat Capacity -->
+                <label for="seatCapacity">Seat Capacity:</label>
+                <div class="seat-capacity" id="seatCapacity">
+                    <label><input type="radio" name="seatCapacity" value="1">1</label>
+                    <label><input type="radio" name="seatCapacity" value="2">2</label>
+                    <label><input type="radio" name="seatCapacity" value="3">3</label>
+                    <label><input type="radio" name="seatCapacity" value="4">4</label>
+                </div>
+
+                <!-- Smoking Preference -->
+                <label for="smokingPreference">Smoking Preference:</label>
+                <div class="smoking-preference" id="smokingPreference">
+                    <label><input type="radio" name="smokingPreference" value="yes">Yes</label>
+                    <label><input type="radio" name="smokingPreference" value="no">No</label>
+                </div>
+
+                <!-- Gender Preference -->
+                <label for="genderPreference">Gender Preference:</label>
+                <div class="gender-preference" id="genderPreference">
+                    <label><input type="radio" name="genderPreference" value="male">Male</label>
+                    <label><input type="radio" name="genderPreference" value="female">Female</label>
+                    <label><input type="radio" name="genderPreference" value="no-indication">No Indication</label>
+                </div>
+            </fieldset>
+
+
+            <label for="dateTime">Date and Time:</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+            <button type="submit">Post Ride</button>
+        </form>
+    </div>
+    <div class="imgForRideForm">
+        <img id="imageforRide"
+             src="https://images.pexels.com/photos/5226497/pexels-photo-5226497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="Order Taxi">
+    </div>
+</section>
+
+
+<section id="about" class="about">
+    <h2 id="header=about-us" style="text-align: center;">About Us</h2>
+    <p>"At Your Ride, we are not just a rideshare platform; we are architects of seamless journeys and curators of
+        unforgettable experiences. Our journey began with a vision to redefine transportation, transcending the
+        ordinary to craft a tapestry of
+        safe, reliable, and delightful rides. Engraved in the very essence of our service is a commitment to weaving
+        stories of trust and convenience for each traveler. As trailblazers in the realm of ridesharing, we navigate
+        beyond the mundane, offering
+        a sanctuary where every commute is a celebration of comfort and every driver is a storyteller of
+        reliability. At Your Ride, we don't just connect destinations; we bridge the realms of reliability and
+        innovation, ensuring your journey is not
+        just a ride but a memorable passage through a landscape of unparalleled service."</p>
+</section>
+
+<section id="sustainability-metrics" class="sustainability-metrics">
+    <h2>Sustainability Metrics</h2>
+    <div class="sustainability-content">
+        <div class="loading-overlay">
+            <div class="loading-spinner"></div>
+        </div>
+        <div class="animated fadeInLeftBig" id="pieChartContainer">
+            <canvas id="pieChart" width="300" height="300"></canvas>
+        </div>
+        <div class="animated fadeInRightBig" id="barTableContainer">
+        </div>
+
+        <p style="text-align: justify">
+            Our company promotes sustainability by monitoring essential metrics, providing users with real-time insights
+            into reduced traffic congestion and lower CO2 emissions. This empowers both passengers and drivers to
+            contribute to a greener environment, fostering eco-conscious decisions for a responsible approach to
+            transportation.
+        </p>
+    </div>
+</section>
+
+
+<section id="testimonials" class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+        <p>"Great service! The drivers are always friendly and punctual."</p>
+        <span>- Jane Doe</span>
+    </div>
+    <div class="testimonial">
+        <p>"I love how easy it is to use Your Ride. It has made my daily commute stress-free."</p>
+        <span>- John Smith</span>
+    </div>
+</section>
+
+
+<section id="partners" class="partners">
+    <h2>Our Partners</h2>
+    <p>We proudly collaborate with industry leaders to enhance your ride experience.</p>
+    <div class="partner-logo">
+        <div id="spec"><img
+                src="https://static.vecteezy.com/system/resources/previews/020/336/735/non_2x/tesla-logo-tesla-icon-transparent-png-free-vector.jpg"/>
+            <img src="https://www.bravosupermarket.az/site/templates/img/bravo-share.jpg"/>
+        </div>
+    </div>
+</section>
+
+<section id="cta" class="cta">
+    <h2>Ready to Ride?</h2>
+    <p>Join us today for a seamless ride experience!</p>
+    <a href="reg.html" class="cta-button">Sign Up Now</a>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="Policy">
+            <p>In our commitment to providing a safe and secure environment for both riders and drivers, our
+                Uber-like taxi application strictly adheres to a comprehensive set of safety rules and guidelines.
+                All drivers undergo thorough background checks,
+                ensuring a trustworthy and reliable experience for our users. To further prioritize safety, we
+                enforce a zero-tolerance policy for any form of discrimination, harassment, or inappropriate
+                behavior. Additionally, our platform incorporates
+                real-time GPS tracking, allowing loved ones to monitor the journey, and all transactions are
+                cashless to eliminate potential risks. Both riders and drivers are expected to adhere to traffic
+                laws, and any violation may result in immediate
+                suspension from the platform. With the collective responsibility of our community, we strive to
+                create a secure and enjoyable transportation experience for everyone who chooses our service.</p>
+
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@yourride.com</p>
+            <p>Phone: +1 123-456-7890</p>
+        </div>
+        <div class="social-media">
+            <h3>Connect with Us</h3>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<script src="home.js"></script>
+</body>
+
+</html>
